@@ -1,1 +1,1 @@
-release: node css-build
+release: npm run css-build
