@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="author" content="niko.vakiparta@tuni.fi,joni.m.heikkila@tuni.fi,henry.andersson@tuni.fi,hannu.pursiainen@tuni.fi">
+
+  <script src="./lib/d3.min.js"></script>
+  <script src="./lib/topojson.js"></script>
+  <script src="./lib/jquery.min.js"></script>
+  <script src="./lib/datamaps.world.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap-responsive.min.css">
+  <link rel="stylesheet" type="text/css" href="./lib/bootstrap.min.css">
+  <!-- Own stylesheet -->
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+
+  <title>Corona</title>
+</head>
+
+<body id="coronabody">
+  <main id="container">
+    <p id="info">TIETA9<br>Spring 2020</p>
+    <h1 id="coronatitle">Coronavirus statistics</h1>
+  </main>
+  <nav id="nav">
+    <a id="nav_corona" href="index.html">Corona</a>
+    <a id="nav_roadmap" href="roadmap.html">Roadmap</a>
+  </nav>
+
+  <form name="timeseriesForm" id="timeseriesForm">
+    <button id="timeseries" type="button" onclick="timeseriesPlay()">Time series</button>
+  </form>
+
+  <form name="countryform" id="countryform">
+    <label for="country">Give a country:</label>
+      <input type="text" name="country" id="country" placeholder="Country" list="searchresults"
+        autocomplete="off">
+      <datalist id="searchresults"></datalist>
+  </form>
+
+  <section>
+      <div class="table-wrapper-scroll-y my-custom-scrollbar">
+          <table class="table table-bordered table-striped mb-0" id="stats">
+              <thead>
+                  <tr>
+                      <th>Country</th>
+                      <th>Confirmed</th>
+                      <th>Deaths</th>
+                      <th>Recovered</th>
+                  </tr>
+              </thead>
+              <tbody id="tbody">
+              </tbody>
+          </table>
+      </div>      
+  </section>
+
+  <section id="map">
+    <div id="mapcontainer">
+      <p id="date"></p>
+      <div id="coronamap"></div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+  <!-- Own Javascript -->
+  <script src="./js/config.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

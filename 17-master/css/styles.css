@@ -1,0 +1,246 @@
+ 
+@font-face {
+	font-family: myFirstFont;
+	src: url(sansation_light.woff);
+  }
+
+
+  body{  
+	max-width: 100%;
+	height: 100vh;
+  }
+  
+  h1 {
+	  padding: 20px;
+	  text-align: center;
+	  font-family: "Times New Roman", Times, serif;
+	  font-size: 125px;
+  }
+  
+  h2 {
+	  font-size: 30px;
+	  font-weight: bold;
+  }
+  
+  h3 {
+	  font-size: 20px;
+  }
+  
+  #coronabody {
+	  background: linear-gradient(to bottom right, cyan, rebeccapurple) fixed;
+  }
+  
+  #roadbody {
+	  background: linear-gradient(to bottom right, rgb(70, 157, 216), rgb(55, 134, 146)) fixed;
+  }
+  
+  #container {
+	  background-image: linear-gradient(to bottom right, darkblue, cyan);
+	  height: 100px;
+	  padding: 20px;
+  }
+  
+  #roadmap {
+	  background-image: linear-gradient(to bottom right, rgb(70, 157, 216), rgb(158, 157, 92));
+	  height: 100px;
+	  padding: 20px;
+  }
+  
+  #coronatitle {
+	  color: paleturquoise;
+  }
+  
+  #roadtitle {
+	  color: rgb(255, 255, 202);
+  }
+  
+  
+  #info {
+	  border-radius: 10px;
+	  font-family: "Lucida Console", Courier, monospace;
+	  color: cyan;
+	  background-image: linear-gradient(to top left, rebeccapurple, blue);
+	  float: left;
+	  width: 95px;
+	  padding: 5px;
+  }
+  
+  
+  #timeseries {
+	  font-size: 30px;
+	  width: 200px;
+	  height: 40px;
+	  color: darkblue;
+	  font-weight: bold;
+	  background-color: rgb(218, 218, 110);
+	  border-radius: 5px;
+  }
+	
+  #timeseriesForm {
+	  align-items: center;
+	  padding: 30px 0px;
+	  max-width: 100%;
+	  text-align: center;
+	  height: 30px;
+  }
+  
+  #countryform {
+	  height: 100px;
+	  border-radius: 10px;
+	  padding: 0px 20px;
+	  color: yellow;
+	  text-align: center;
+	  font-size: 100px;
+  }
+  
+  #country {
+	  text-align: center;
+	  color: darkblue;
+	  font-size: 20px;
+	  padding: 10px;
+  }
+  
+  
+  
+  #nav {
+	  max-width: 100%;
+	  height: 200px;
+	  display: flex;
+	  flex-direction: row;
+	  justify-content: center;
+	  color: rebeccapurple;
+	  text-align: center;
+	  font-weight: bold;
+  }
+  
+  
+  #nav_corona {
+	  width: 50vw;
+	  background-image: url('../lib/coronavirus.jpg');
+	  background-size: cover;
+	  font-size: 45px;
+	  padding: 80px;
+	  text-align: center;
+	  text-decoration: underline;
+	  color: yellow;
+	  
+  }
+  
+  #nav_roadmap {
+	  width: 50vw;
+	  background-image: url('../lib/roadmap.jpg');
+	  background-repeat: no-repeat;
+	  background-size: cover;
+	  background-position: center;
+	  font-size: 45px;
+	  padding: 80px;
+	  text-align: center;
+	  text-decoration: underline;
+  }
+  
+  ul {
+	background-color:  rgb(146, 175, 91);
+	width: 77vw;
+	border-radius: 10px;
+	padding: 40px;
+	list-style: none;
+	font-size: 20px;
+	font-weight: bold;
+  }
+
+  li {
+	list-style: none;
+	text-align: justify;
+  }
+
+  sup {
+	  font-size: 18px;
+  }
+
+  #list-title {
+	  padding: 30px;
+	  width: 73vw;
+	  background-color:  rgb(160, 209, 70);
+	  border-radius: 10px;
+	  font-size: 40px;
+  }
+
+  #checklist1 {
+	  color: rebeccapurple;
+  }
+
+  #checklist2 {
+	  color: darkblue;
+  }
+
+
+  #link {
+	  color: rgb(211, 198, 18);
+	  font-weight: bold;
+  }
+
+  label {
+	  font-size: 30px;
+	  padding: 9px;
+	  height: 30px;
+  }
+  
+  tr {
+	  background-color: yellow;
+	  border-radius: 10px;
+  }
+  
+  table {
+	  color: blue;
+	  font-size: 20px;
+	  padding: 20px;
+	
+  }
+  
+  /*Todo:n yliviivaus.*/
+  .strikethrough:checked + label {
+	text-decoration:line-through
+  }
+  
+  
+  #list:nth-of-type(odd) {
+	  background-color: rgb(210, 230, 172);
+	  width: 75vw;
+	  border-radius: 10px
+  }
+  
+  #list:nth-of-type(even) {
+	  background-color: rgb(176, 194, 142);
+	  width: 75vw;
+	  border-radius: 10px
+  }
+  
+  #coronamap {
+	  height: 1200px;
+	  width: 1600px;
+	}
+  
+  #date {
+	  text-align: center;
+	  top: 15%;
+	  left: 50%;
+	  padding: 30px;
+	  color: rgb(0, 0, 0);
+	  font-size: 300%;
+	  font-weight: bold;
+	}
+  
+	#mapcontainer {
+	  padding: 10px;
+	  position: absolute;
+	  width: 1600px;
+	  justify-content: center;
+	  display: flex;
+	  flex-direction: column;
+	}
+
+	#map {
+		display: flex;
+		max-width: 100%;
+		justify-content: center;
+	}
